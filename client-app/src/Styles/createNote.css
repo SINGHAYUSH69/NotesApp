@@ -1,0 +1,16 @@
+h2{
+    color:orange;
+    text-align: center;
+}
+.input2{
+    border-radius: 2px;
+}
+.box2{
+    display:flex;
+    justify-content: flex-end;
+}
+.butn2{
+    width: 100px;
+    padding:10px;
+    background-color: rgb(66, 66, 124);
+}
