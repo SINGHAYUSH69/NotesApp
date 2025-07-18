@@ -1,0 +1,43 @@
+body{
+    background:linear-gradient(45deg,rgb(106, 187, 190),rgb(41, 41, 143,1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.outer{
+    border:2px solid black;
+    border-radius: 5px;
+    padding:15px;
+    min-width: 50vh;
+    background:rgb(228, 223, 223);
+    color:rgb(69, 69, 161)
+}
+.box{
+    padding:5px;
+}
+input{
+    border:1px solid grey;
+    border-radius:5px;
+    padding:5px;
+    background-color:antiquewhite;
+}
+h1,h3{
+    margin-bottom:5px;
+}
+.butn{
+    margin-top:20px;
+    text-align: center;
+    min-width: 80%;
+}
+.butn1{
+    background-color: aquamarine;
+    min-width: 100%;;
+    min-height: 30px;
+}
+.butn:active{
+    border:2px solid grey;
+}
+h4{
+    color: red;
+}
