@@ -4,6 +4,6 @@ const Notesrouter=express.Router();
 const {generateToken,verifyToken}=require("../middleware/jwt");
 Notesrouter.post("/create",verifyToken,createNote);
 Notesrouter.post("/view",verifyToken,viewNote);
-Notesrouter.post("/delete/:id",verifyToken,deleteNote);
+Notesrouter.delete("/delete/:id",verifyToken,deleteNote);
 Notesrouter.post("/update/:id",verifyToken,updateNote);
 module.exports=Notesrouter;
