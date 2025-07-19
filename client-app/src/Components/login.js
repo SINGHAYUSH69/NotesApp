@@ -4,9 +4,11 @@ import validator from "validator";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import api from "./api";
+import { useNavigate } from "react-router-dom";
 const Login=()=>{
     const [credential,setCredential]=useState({email:"",password:""});
     const [err,setError]=useState({mailerror:"",perror:""});
+    const navigate=useNavigate();
     const handleChange=(e)=>{
         setCredential({...credential,[e.target.name]:e.target.value});
     }
@@ -29,12 +31,14 @@ const Login=()=>{
                 toast.success("Login Successful");
                 localStorage.setItem('token',response.data["Successful Login"]);
                 setCredential({email:"",password:""});
+                navigate("/dashboard");
             }
         }catch(error){
             toast.error("Failed to Login! Please try Again");
         }
     }
     return(
+        <div className="body-wrapper">
         <div className="outer">
             <h1 style={{textAlign:"center"}}>Login</h1>
             <form method="post">
@@ -53,6 +57,7 @@ const Login=()=>{
                 </div>
                 <ToastContainer />
             </form>
+        </div>
         </div>
     );
 }
