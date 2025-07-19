@@ -1,9 +1,10 @@
-body{
+.body-wrapper{
     background:linear-gradient(45deg,rgb(106, 187, 190),rgb(41, 41, 143,1));
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-width: 100vh;
 }
 .outer{
     border:2px solid black;
@@ -11,7 +12,7 @@ body{
     padding:15px;
     min-width: 50vh;
     background:rgb(228, 223, 223);
-    color:rgb(69, 69, 161)
+    color:rgb(69, 69, 161);
 }
 .box{
     padding:5px;

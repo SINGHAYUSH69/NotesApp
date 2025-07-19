@@ -1,0 +1,16 @@
+.sidebar{
+    background-color: #e4dfdf;
+    width:100%;
+    overflow-y: auto;
+}
+.dark{
+    background-color: black;
+    color: rgb(75, 75, 204);
+}
+.item{
+    border-bottom:1px solid grey;
+    margin-top:5px;
+    font-family:cursive;
+    font-style:normal;
+    padding:5px;
+}

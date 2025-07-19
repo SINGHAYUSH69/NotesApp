@@ -1,5 +1,25 @@
+.bright{
+    border:2px solid black;
+    border-left:0px;
+    padding:15px;
+    flex:1;
+    background:#e4dfdf;
+    color:orange;
+}
+.doom{
+    background:black;
+    border:2px solid black;
+    border-left:0px;
+    padding:15px;
+    flex:1;
+    color:rgb(69, 69, 161);
+}
 h2{
     color:orange;
+    text-align: center;
+}
+.doom-head{
+    color:rgb(69, 69, 161);
     text-align: center;
 }
 .input2{
@@ -13,4 +33,16 @@ h2{
     width: 100px;
     padding:10px;
     background-color: rgb(66, 66, 124);
+    color:azure;
+}
+.wmde-markdown-var,w-md-editor,w-md-editor-show-view{
+  min-height: 500px !important;
+  background-color: bisque;
+}
+.foot{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width:98%;
+    padding:10px;
 }
