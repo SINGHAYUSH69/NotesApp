@@ -27,9 +27,9 @@ const viewNote=async (req,res)=>{
     try{
         const NoteList=await Note.find({userId:req.user.id}).sort({updatedAt:-1});
         if(NoteList.length===0){
-            return res.status(404).send({message:"No Notes Found"});
+            return res.status(200).send({list:[]});
         }
-        return res.status(200).send({message:NoteList});
+        return res.status(200).send({list:NoteList});
     }catch(error){
         console.log(error);
         return res.status(500).send({message:"Failed to fetch Notes"});
