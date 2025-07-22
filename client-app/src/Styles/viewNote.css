@@ -1,16 +1,19 @@
 .sidebar{
-    background-color: #e4dfdf;
+    padding-top:27px;
+    background-color: rgb(228, 223, 223);
     width:100%;
     overflow-y: auto;
+    text-align: center;
 }
 .dark{
-    background-color: black;
+    background-color: rgb(48, 31, 31);
     color: rgb(75, 75, 204);
+
 }
 .item{
-    border-bottom:1px solid grey;
+    border: 1px solid black;
     margin-top:5px;
     font-family:cursive;
     font-style:normal;
-    padding:5px;
+    padding:2px;
 }

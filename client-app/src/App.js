@@ -4,10 +4,15 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import CreateNote from "./Components/createNote";
 import ViewNote from "./Components/viewNote";
 import Dashboard from "./Components/dashboard";
+import Signup from "./Components/signup";
 const router=createBrowserRouter([
   {
     path: "/",
-    element: <Navigate to="/user/login" />,
+    element: <Navigate to="/user/signup" />,
+  },
+  {
+    path:"/user/signup",
+    element:<Signup/>,
   },
   {
     path:"/user/login",

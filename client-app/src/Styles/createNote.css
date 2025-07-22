@@ -1,5 +1,6 @@
 .bright{
     border:2px solid black;
+    border-top:0px;
     border-left:0px;
     padding:15px;
     flex:1;
@@ -7,8 +8,9 @@
     color:orange;
 }
 .doom{
-    background:black;
+    background:rgb(48, 31, 31);
     border:2px solid black;
+    border-top:0px;
     border-left:0px;
     padding:15px;
     flex:1;
@@ -36,7 +38,7 @@ h2{
     color:azure;
 }
 .wmde-markdown-var,w-md-editor,w-md-editor-show-view{
-  min-height: 500px !important;
+  min-height: 400px !important;
   background-color: bisque;
 }
 .foot{
